@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JA Weather</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Logo link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+
+                <!-- Client Giving Us There Location hHere -->
+                <input type="text" class="form-control" id="locationInput" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <!-- Search Button -->
+                    <button type="button" class="btn btn-danger" id="searchWeather" >Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <!-- Weather Status PNG -->
+            <img id="weatherPNG" alt="">
+            <h1 id="showLocation">Dhaka</h1>
+            <!-- Weather Degree -->
+            <h3><span id="degree"></span>&deg;C</h3>
+            <!-- Weather Status -->
+            <h1 class="lead" id="weatherStatus">Clouds</h1>
+        </div>
+    </div>
+<!-- There is Script  -->
+<script src="app.js"></script>
+</body>
+
+</html>
